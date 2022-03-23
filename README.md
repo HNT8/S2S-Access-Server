@@ -1,4 +1,4 @@
-# S2S
+# S2S Remote Access Server
 The remote access server for the S2S project.
 
 The C# TCP server can be hosted by your desktop application and can be used to send and receive packets from a TCP client.
