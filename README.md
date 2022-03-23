@@ -17,5 +17,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.sendall(COMMAND)
     data = s.recv(10000)
 
-print(f"Recceived {data!r}")
+print(f"Received {data!r}")
 ```
