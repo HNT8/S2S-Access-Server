@@ -12,6 +12,7 @@ namespace S2S
         {
             Commands.Add(new RunApplication());
             Commands.Add(new RunURL());
+            Commands.Add(new RunFolder());
         }
 
         public static void RunCommand(string command)
