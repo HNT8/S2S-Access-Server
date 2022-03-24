@@ -15,15 +15,19 @@ namespace S2S
 
         static void Main(string[] args)
         {
-            Console.Write("Port >> ");
+            Console.Title = "S2S Remote Access Server";
+
+            /*Console.Write("Port >> ");
             string port = Console.ReadLine();
             Console.Write("IP >> ");
-            string ip = Console.ReadLine();
+            string ip = Console.ReadLine();*/
 
             Console.Clear();
 
-            ServerInfo.SetConnectionInformation(IPAddress.Parse(ip), Convert.ToInt32(port));
+            ServerInfo.SetConnectionInformation(IPAddress.Parse("10.0.0.2"), Convert.ToInt32(7777));
             ConsoleLog.Log($"Attempting to launch TCP listener on {ServerInfo.IP.ToString()}:{ServerInfo.PORT}");
+
+            CommandParser.RegisterCommands();
 
             TcpListener serverSocket = new TcpListener(ServerInfo.IP, ServerInfo.PORT);
             serverSocket.Start();
@@ -47,7 +51,7 @@ namespace S2S
                 {
                     data = Encoding.ASCII.GetString(bytes, 0, i);
 
-                    ConsoleLog.Log($"Received Packet: {data}");
+                    ConsoleLog.CommandSearchLog($"Received Packet: ", data);
                     CommandParser.RunCommand(data);
 
                     byte[] msg = Encoding.ASCII.GetBytes(data);
