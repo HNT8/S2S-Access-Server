@@ -1,0 +1,8 @@
+D:\S2S-Access-Server\Remote Access\obj\Release\Remote Access.csproj.SuggestedBindingRedirects.cache
+D:\S2S-Access-Server\Remote Access\obj\Release\Remote Access.csproj.CoreCompileInputs.cache
+D:\S2S-Access-Server\Remote Access\bin\Release\Remote Access.exe.config
+D:\S2S-Access-Server\Remote Access\bin\Release\Remote Access.exe
+D:\S2S-Access-Server\Remote Access\bin\Release\Remote Access.pdb
+D:\S2S-Access-Server\Remote Access\obj\Release\Remote Access.exe
+D:\S2S-Access-Server\Remote Access\obj\Release\Remote Access.pdb
+D:\S2S-Access-Server\Remote Access\obj\Release\Remote Access.csproj.AssemblyReference.cache

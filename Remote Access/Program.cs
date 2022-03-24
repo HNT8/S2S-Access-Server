@@ -17,14 +17,24 @@ namespace S2S
         {
             Console.Title = "S2S Remote Access Server";
 
-            /*Console.Write("Port >> ");
-            string port = Console.ReadLine();
-            Console.Write("IP >> ");
-            string ip = Console.ReadLine();*/
+            string ip = null;
+            string port = null;
+
+            if (args.Length == 0)
+            {
+                Console.Write("IP >> ");
+                ip = Console.ReadLine();
+                Console.Write("Port >> ");
+                port = Console.ReadLine();
+            } else if (args.Length > 1)
+            {
+                ip = args[0];
+                port = args[1];
+            }            
 
             Console.Clear();
 
-            ServerInfo.SetConnectionInformation(IPAddress.Parse("10.0.0.2"), Convert.ToInt32(7777));
+            ServerInfo.SetConnectionInformation(IPAddress.Parse(ip), Convert.ToInt32(port));
             ConsoleLog.Log($"Attempting to launch TCP listener on {ServerInfo.IP.ToString()}:{ServerInfo.PORT}");
 
             CommandParser.RegisterCommands();
