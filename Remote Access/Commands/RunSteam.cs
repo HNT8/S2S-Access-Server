@@ -10,7 +10,11 @@ namespace S2S.Commands
 
         public void Execute(string command)
         {
-            Process.Start($"steam://rungameid/{command}");
+            try
+            {
+                Process.Start($"steam://rungameid/{command}");
+            }
+            catch { }
         }
     }
 }
