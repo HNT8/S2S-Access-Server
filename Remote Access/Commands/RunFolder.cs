@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.IO;
 
 namespace S2S.Commands
@@ -17,7 +18,29 @@ namespace S2S.Commands
                 {
                     ProcessStartInfo startInfo = new ProcessStartInfo
                     {
-                        Arguments = command,
+                        Arguments = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+                        FileName = "explorer.exe"
+                    };
+                    Process.Start(startInfo);
+                    return;
+                }
+
+                if (command == "pictures")
+                {
+                    ProcessStartInfo startInfo = new ProcessStartInfo
+                    {
+                        Arguments = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures),
+                        FileName = "explorer.exe"
+                    };
+                    Process.Start(startInfo);
+                    return;
+                }
+
+                if (command == "videos")
+                {
+                    ProcessStartInfo startInfo = new ProcessStartInfo
+                    {
+                        Arguments = Environment.GetFolderPath(Environment.SpecialFolder.MyVideos),
                         FileName = "explorer.exe"
                     };
                     Process.Start(startInfo);
