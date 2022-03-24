@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\RunFolder.cs" />
     <Compile Include="Commands\RunURL.cs" />
     <Compile Include="Misc\Command.cs" />
     <Compile Include="Misc\CommandParser.cs" />
