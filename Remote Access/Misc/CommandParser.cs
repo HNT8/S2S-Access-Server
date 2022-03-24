@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using S2S.Commands;
 
 namespace S2S
 {
-    internal class CommandParser
+    public static class CommandParser
     {
         private static List<Command> Commands = new List<Command>();
 
@@ -13,6 +12,8 @@ namespace S2S
             Commands.Add(new RunApplication());
             Commands.Add(new RunURL());
             Commands.Add(new RunFolder());
+            Commands.Add(new RunSteam());
+
         }
 
         public static void RunCommand(string command)

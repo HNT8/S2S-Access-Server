@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "17e7650a-1d02-402c-9a4f-6635bcb96b8d": {
+      "ProjectGuid": "17e7650a-1d02-402c-9a4f-6635bcb96b8d",
+      "DisplayName": "Remote Access",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
