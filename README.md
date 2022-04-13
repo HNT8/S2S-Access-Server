@@ -30,5 +30,4 @@ def SendCommand(ip, port, command, connectiontype):
     else:
         print(f"Unknown connection type.")
 
-    
-    ```
+```
