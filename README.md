@@ -5,18 +5,30 @@ The C# TCP server can be hosted by your desktop application and can be used to s
 
 You can use the following python function to send a command.
 ```py
-SendCommand("10.0.0.2", 7777, b"run url https://google.com")
+import S2S_Connection.py
+
+# SendCommand(ip, port, command, protocol)
+# 0 = UDP, 1 = TCP
+SendCommand("10.0.0.2", 7777, b"run url https://google.com", 0)
 ```
 
-This will work as long as you import the following script.
+In order to send a packet using python, you must import the following python class.
 ```py
+# File name: S2S_Connection.py
 import socket
 
-def SendCommand(ip, port, command):
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.connect((ip, port))
-        s.sendall(command)
-        data = s.recv(10000)
+def SendCommand(ip, port, command, connectiontype):
+    if connectiontype == 1:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.connect((ip, port))
+            s.sendall(command)
+            data = s.recv(1024)
+            print(data)
+    elif connectiontype == 0:
+        with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
+            s.sendto(command, (ip, port))
+    else:
+        print(f"Unknown connection type.")
 
-    print(f"Recceived {data!r}")
-```
+    
+    ```
