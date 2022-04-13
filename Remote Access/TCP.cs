@@ -6,30 +6,12 @@ using System.Threading;
 
 namespace S2S
 {
-    internal class Server
+    internal class TCP
     {
-        static void Main(string[] args)
+        public static void TCPServer()
         {
-            Console.Title = "S2S Remote Access Server";
-
-            string ip = null;
-            string port = null;
-
-            if (args.Length == 0)
-            {
-                Console.Write("IP >> ");
-                ip = Console.ReadLine();
-                Console.Write("Port >> ");
-                port = Console.ReadLine();
-            } else if (args.Length > 1)
-            {
-                ip = args[0];
-                port = args[1];
-            }            
-
             Console.Clear();
 
-            ServerInfo.SetConnectionInformation(IPAddress.Parse(ip), Convert.ToInt32(port));
             ConsoleLog.Log($"Attempting to launch TCP listener on {ServerInfo.IP.ToString()}:{ServerInfo.PORT}");
 
             CommandParser.RegisterCommands();
@@ -39,7 +21,7 @@ namespace S2S
             ConsoleLog.Positive($"Successfully launched TCP listener on {ServerInfo.IP.ToString()}:{ServerInfo.PORT}");
             Console.WriteLine();
 
-            byte[] bytes = new byte[10000];
+            byte[] bytes = new byte[1024];
             string data = null;
 
             bool quit = false;
@@ -53,7 +35,7 @@ namespace S2S
 
                 int i;
 
-                while((i = stream.Read(bytes, 0, bytes.Length)) != 0)
+                while ((i = stream.Read(bytes, 0, bytes.Length)) != 0)
                 {
                     data = Encoding.ASCII.GetString(bytes, 0, i);
 
@@ -68,9 +50,6 @@ namespace S2S
 
                 clientSocket.Close();
             }
-
         }
-
-        private readonly string credits = "S2S REMOTE ACCESS SERVER MADE BY HUNTER POLLOCK github.com/hlpdev";
     }
 }

@@ -2,7 +2,7 @@
 
 namespace S2S.Commands
 {
-    public class RunURL : Command
+    public class RunURL : ICommand
     {
         public string CommandName => "run";
 

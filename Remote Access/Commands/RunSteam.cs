@@ -2,7 +2,7 @@
 
 namespace S2S.Commands
 {
-    public class RunSteam : Command
+    public class RunSteam : ICommand
     {
         public string CommandName => "run";
 

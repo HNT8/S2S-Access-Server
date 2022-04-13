@@ -1,8 +1,11 @@
 D:\S2S-Access-Server\Remote Access\obj\Release\Remote Access.csproj.SuggestedBindingRedirects.cache
 D:\S2S-Access-Server\Remote Access\obj\Release\Remote Access.csproj.CoreCompileInputs.cache
-D:\S2S-Access-Server\Remote Access\bin\Release\Remote Access.exe.config
-D:\S2S-Access-Server\Remote Access\bin\Release\Remote Access.exe
-D:\S2S-Access-Server\Remote Access\bin\Release\Remote Access.pdb
-D:\S2S-Access-Server\Remote Access\obj\Release\Remote Access.exe
-D:\S2S-Access-Server\Remote Access\obj\Release\Remote Access.pdb
 D:\S2S-Access-Server\Remote Access\obj\Release\Remote Access.csproj.AssemblyReference.cache
+D:\S2S-Access-Server\Remote Access\bin\Release\CommandBase.dll
+D:\S2S-Access-Server\Remote Access\bin\Release\CommandBase.pdb
+D:\S2S-Access-Server\Remote Access\obj\Release\Remote Access.csproj.CopyComplete
+D:\S2S-Access-Server\Remote Access\bin\Release\S2S_Server.exe.config
+D:\S2S-Access-Server\Remote Access\bin\Release\S2S_Server.exe
+D:\S2S-Access-Server\Remote Access\bin\Release\S2S_Server.pdb
+D:\S2S-Access-Server\Remote Access\obj\Release\S2S_Server.exe
+D:\S2S-Access-Server\Remote Access\obj\Release\S2S_Server.pdb

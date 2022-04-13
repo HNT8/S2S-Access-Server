@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace S2S.Commands
 {
-    public class RunApplication : Command
+    public class RunApplication : ICommand
     {
         public string CommandName => "run";
 

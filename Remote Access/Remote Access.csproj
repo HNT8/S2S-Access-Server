@@ -7,7 +7,7 @@
     <ProjectGuid>{17E7650A-1D02-402C-9A4F-6635BCB96B8D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>S2S</RootNamespace>
-    <AssemblyName>Remote Access</AssemblyName>
+    <AssemblyName>S2S_Server</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>S2S.Server</StartupObject>
+    <StartupObject>S2S.Start</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,17 +49,24 @@
     <Compile Include="Commands\RunFolder.cs" />
     <Compile Include="Commands\RunSteam.cs" />
     <Compile Include="Commands\RunURL.cs" />
-    <Compile Include="Misc\Command.cs" />
     <Compile Include="Misc\CommandParser.cs" />
     <Compile Include="Commands\RunApplication.cs" />
     <Compile Include="Misc\ConsoleLog.cs" />
-    <Compile Include="Server.cs" />
+    <Compile Include="Start.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Misc\ServerInfo.cs" />
+    <Compile Include="TCP.cs" />
+    <Compile Include="UDP.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CommandBase\CommandBase.csproj">
+      <Project>{baa51c18-6897-4d68-9ed5-d7f5f763608e}</Project>
+      <Name>CommandBase</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,7 +4,7 @@ using System.IO;
 
 namespace S2S.Commands
 {
-    public class RunFolder : Command
+    public class RunFolder : ICommand
     {
         public string CommandName => "run";
 

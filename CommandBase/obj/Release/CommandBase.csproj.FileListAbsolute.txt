@@ -1,0 +1,5 @@
+D:\S2S-Access-Server\CommandBase\bin\Release\CommandBase.dll
+D:\S2S-Access-Server\CommandBase\bin\Release\CommandBase.pdb
+D:\S2S-Access-Server\CommandBase\obj\Release\CommandBase.csproj.CoreCompileInputs.cache
+D:\S2S-Access-Server\CommandBase\obj\Release\CommandBase.dll
+D:\S2S-Access-Server\CommandBase\obj\Release\CommandBase.pdb
