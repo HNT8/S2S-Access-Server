@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remote Access", "Remote Acc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandBase", "CommandBase\CommandBase.csproj", "{BAA51C18-6897-4D68-9ED5-D7F5F763608E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunCommands", "RunURL\RunCommands.csproj", "{14C765BB-1541-43B2-8704-E4A634555AAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunCommands", "RunCommands\RunCommands.csproj", "{14C765BB-1541-43B2-8704-E4A634555AAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
