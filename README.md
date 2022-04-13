@@ -5,7 +5,7 @@ The C# S2S server can be hosted by your desktop application and can be used to s
 
 You can use the following python function to send a command.
 ```py
-import S2S_Connection.py
+import S2S_Connection
 
 # SendCommand(ip, port, command, protocol)
 # 0 = UDP, 1 = TCP
