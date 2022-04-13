@@ -46,11 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commands\RunFolder.cs" />
-    <Compile Include="Commands\RunSteam.cs" />
-    <Compile Include="Commands\RunURL.cs" />
     <Compile Include="Misc\CommandParser.cs" />
-    <Compile Include="Commands\RunApplication.cs" />
     <Compile Include="Misc\ConsoleLog.cs" />
     <Compile Include="Start.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
