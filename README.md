@@ -1,4 +1,4 @@
-# THIS PROJECT IS ARCHIVED AND WILL NO LONGER BE WORKED ON
+# THIS PROJECT IS ARCHIVED
 
 # S2S Remote Access Server
 The remote access server for the S2S project.
